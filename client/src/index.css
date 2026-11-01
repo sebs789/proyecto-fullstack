@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --font-sans: 'Urbanist', sans-serif;
+    --font-heading: 'Poppins', sans-serif;
+
+   
+    --color-crema: #fff8f3;
+    --color-durazno: #f2a387;
+    --color-durazno-fuerte: #e8805c;
+    --color-durazno-suave: #fde4d8;
+    --color-cafe: #3a2620;
+    --color-arcilla: #7b5a4c;
+}
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+    @media (prefers-reduced-motion: reduce) {
+        html {
+            scroll-behavior: auto;
+        }
+    }
+    body {
+        background-color: var(--color-crema);
+        color: var(--color-cafe);
+        font-family: var(--font-sans);
+    }
+    p {
+        @apply mb-4;
+    }
+    p:last-child {
+        @apply mb-0;
+    }
+}
