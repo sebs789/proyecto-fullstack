@@ -49,9 +49,8 @@ Aplicación web full stack para gestionar la carta de un restaurante. Permite **
 
 1. Crea una cuenta en <https://www.mongodb.com/atlas> y un cluster gratuito (M0).
 2. En *Database Access*, crea un usuario con contraseña para la base de datos.
-3. En *Network Access*, permite tu dirección IP (para pruebas se puede usar `0.0.0.0/0`).
+3. En *Network Access*, permite tu dirección IP 
 4. En el cluster, pulsa *Connect > Drivers* y copia la cadena de conexión. Se parece a `mongodb+srv://USUARIO:CONTRASEÑA@cluster0.xxxxx.mongodb.net/`.
-5. Reemplaza `USUARIO` y `CONTRASEÑA` por los tuyos y agrega el nombre de la base al final: `.../restaurante`. Esa será tu `MONGODB_URI`.
 
 Los nombres exactos de los menús de Atlas pueden variar un poco con el tiempo.
 
@@ -69,8 +68,8 @@ npm install
 |---|---|
 | `PORT` | Puerto del servidor  |
 | `MONGODB_URI` | Cadena de conexión a MongoDB  |
-| `JWT_SECRET` | Texto largo y aleatorio para firmar los tokens. No lo compartas |
-| `JWT_EXPIRES_IN` | Duración del token, por ejemplo `2h` |
+| `JWT_SECRET` | Texto largo y aleatorio para firmar los tokens. |
+| `JWT_EXPIRES_IN` | Duración del token |
 | `CLIENT_URL` | Dirección del frontend, por defecto `http://localhost:5173` |
 
 Carga los datos de prueba (un usuario demo y 12 platos):
